@@ -1,0 +1,218 @@
+    
+// PRIMARY 
+$Purple: hsl(259, 100%, 65%);
+$Light-red: hsl(0, 100%, 67%);
+
+// NEUTRAL 
+$White: hsl(0, 0%, 100%);
+$Off-white: hsl(0, 0%, 94%);
+$Light-grey: hsl(0, 0%, 86%);
+$Smokey-grey: hsl(0, 1%, 44%);
+$Off-black: hsl(0, 0%, 8%);
+
+
+$mobile-size: 600px;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+
+    body {
+        background-color: $Off-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5vh;
+    
+        .full-section {
+            background-color: $White;
+            height: 70vh;
+            width: 50vw;
+            border-radius: 3%;
+            border-bottom-right-radius: 30%;
+            padding: 40px 50px;
+    
+            .input-section {
+                position: relative;
+                width: 75%;
+                height: 30%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                grid-template-rows: 1fr;
+    
+                .day-input {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+                
+                .month-input {
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+                
+                .year-input {
+                    grid-column: 3;
+                    grid-row: 1;
+                }
+                
+                .input {
+            
+                    label {
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: $Smokey-grey;
+                        letter-spacing: 2px;
+                    }
+                    
+                    input {
+                        font-size: 32px;
+                        font-weight: 400;
+                        color: $Off-black;
+                        width: 120px;
+                        padding: 5px 15px;
+                        border-radius: 7px;
+                        border: 1px solid $Off-white;
+                        overflow: hidden;
+                    }
+
+                    input:hover, input:focus, input:focus-visible {
+                        outline: 0;
+                        border: 1px solid $Purple; 
+                    }
+
+                    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    .error {
+                        display: none;
+                        font-weight: 400;
+                        font-size: 0.7rem;
+                        color: $Light-red;
+                        font-style: italic;
+                    }
+                    
+                    .shake {
+                        animation: shake 150ms 2 linear;
+                    }
+                }
+            }
+
+            hr {
+                border: 0.8px solid $Light-grey;
+            }  
+            
+            .button-submit {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: $Purple;
+                border: none;
+                float: right;
+                margin-top: -30px;
+            }
+
+            .button-submit:hover {
+                background-color: $Off-black;
+            }
+
+            .answer-section {
+                font-size: 85px;
+                padding-top: 10px;
+                font-weight: 800;
+                font-style: italic;
+                line-height: 1.2;
+
+                .answer-value {
+                    color: $Purple;
+                }
+            }
+
+        }
+    }
+    
+}
+
+@media (max-width: $mobile-size) {
+    body {
+        padding-top: 15vh;
+
+        .full-section{
+            background-color: $White;
+            height: fit-content;
+            width: fit-content;
+            border-radius: 5%;
+            border-bottom-right-radius: 25%;
+            padding: 20px 25px;
+
+            .input-section {
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 15px;
+                grid-template-rows: 1fr;
+                padding-top: 20px ;
+                padding-bottom: 50px;
+
+                .input {
+            
+                    label {
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: $Smokey-grey;
+                        letter-spacing: 2px;
+                    }
+                    
+                    input {
+                        font-size: 26px;
+                        font-weight: 400;
+                        color: $Off-black;
+                        width: 70px;
+                        padding: 5px 15px;
+                        border-radius: 7px;
+                        border: 1px solid $Off-white;
+                        overflow: hidden;
+                    }
+
+                    .error {
+                        display: none;
+                        font-weight: 400;
+                        font-size: 0.5rem;
+                        color: $Light-red;
+                        font-style: italic;
+                    }
+                    
+                }
+            }
+
+            .button-submit {
+                position: relative;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: $Purple;
+                border: none;
+                margin-bottom: 40px ;
+                margin-left: 45%;
+                float: none;
+            }
+
+            .answer-section {
+                font-size: 60px;
+                padding-top: 10px;
+                font-weight: 800;
+                font-style: italic;
+                line-height: 1.2;
+            }
+        }
+    }
+     
+    
+}
+
+
+
+

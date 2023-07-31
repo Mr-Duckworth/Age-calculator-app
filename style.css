@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+* body {
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vh;
+}
+* body .full-section {
+  background-color: hsl(0, 0%, 100%);
+  height: 70vh;
+  width: 50vw;
+  border-radius: 3%;
+  border-bottom-right-radius: 30%;
+  padding: 40px 50px;
+}
+* body .full-section .input-section {
+  position: relative;
+  width: 75%;
+  height: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  grid-template-rows: 1fr;
+}
+* body .full-section .input-section .day-input {
+  grid-column: 1;
+  grid-row: 1;
+}
+* body .full-section .input-section .month-input {
+  grid-column: 2;
+  grid-row: 1;
+}
+* body .full-section .input-section .year-input {
+  grid-column: 3;
+  grid-row: 1;
+}
+* body .full-section .input-section .input label {
+  font-size: 13px;
+  font-weight: 400;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+}
+* body .full-section .input-section .input input {
+  font-size: 32px;
+  font-weight: 400;
+  color: hsl(0, 0%, 8%);
+  width: 120px;
+  padding: 5px 15px;
+  border-radius: 7px;
+  border: 1px solid hsl(0, 0%, 94%);
+  overflow: hidden;
+}
+* body .full-section .input-section .input input:hover, * body .full-section .input-section .input input:focus, * body .full-section .input-section .input input:focus-visible {
+  outline: 0;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+* body .full-section .input-section .input input::-webkit-outer-spin-button, * body .full-section .input-section .input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+* body .full-section .input-section .input .error {
+  display: none;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+}
+* body .full-section .input-section .input .shake {
+  animation: shake 150ms 2 linear;
+}
+* body .full-section hr {
+  border: 0.8px solid hsl(0, 0%, 86%);
+}
+* body .full-section .button-submit {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  float: right;
+  margin-top: -30px;
+}
+* body .full-section .button-submit:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+* body .full-section .answer-section {
+  font-size: 85px;
+  padding-top: 10px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.2;
+}
+* body .full-section .answer-section .answer-value {
+  color: hsl(259, 100%, 65%);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 15vh;
+  }
+  body .full-section {
+    background-color: hsl(0, 0%, 100%);
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5%;
+    border-bottom-right-radius: 25%;
+    padding: 20px 25px;
+  }
+  body .full-section .input-section {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    grid-template-rows: 1fr;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  body .full-section .input-section .input label {
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 2px;
+  }
+  body .full-section .input-section .input input {
+    font-size: 26px;
+    font-weight: 400;
+    color: hsl(0, 0%, 8%);
+    width: 70px;
+    padding: 5px 15px;
+    border-radius: 7px;
+    border: 1px solid hsl(0, 0%, 94%);
+    overflow: hidden;
+  }
+  body .full-section .input-section .input .error {
+    display: none;
+    font-weight: 400;
+    font-size: 0.5rem;
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+  }
+  body .full-section .button-submit {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    margin-bottom: 40px;
+    margin-left: 45%;
+    float: none;
+  }
+  body .full-section .answer-section {
+    font-size: 60px;
+    padding-top: 10px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1.2;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
